@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,7 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            echo "Login successful!";
+            $_SESSION['username'] = $username;
+            $_SESSION['user_id'] = $row['id'];
+            header("Location: home.php");
+            exit();
         } else {
             echo "Invalid password!";
         }
