@@ -1,0 +1,111 @@
+1. Git clone
+
+သူကတော့ ရှိပြီးသား source တစ်ခုကနေ မိမိရဲ့ စက်ထဲကို download ချလိုက်တဲ့ သဘောပါ။ ဥပမာ Github တို့ Gitlab တို့ကနေပြီးတော့ projects တွေ download ချတာပါပဲ။
+
+ဥပမာ…
+
+git clone https://github.com/somename.git
+
+2. Git branch
+
+Branches တွေကတော့ အတော်လေး သုံးပါတယ်။ git ရဲ့ သဘောတရားအရ project တစ်ခု ကို branches တွေအများကြီးခွဲပြီး dev အများကြီးက တပြိုင်တည်းအလုပ်လုပ်ရတာ ပိုအဆင်ပြေ စေပါတယ်။
+
+ဥပမာ…
+
+ဒါက မိမိရဲ့ စက်ထဲက project ရဲ့ branches တွေကိုကြည့်ချင်ရင်
+
+git branch
+
+*ပွင့် နေတဲ့ branch မိမိလက်ရှိ ရောက် နေတဲ့ branch ပါ
+
+branch တွေကိုပြန်ဖျက်ချင်ရင်
+
+git branch -d <branch-name>
+
+မိမိ local က branch သစ်ကို git server ပေါ်တင်ချင်ရင်
+
+git push -u <remote> <branch-name>
+
+3. Git checkout
+
+branch တစ်ကနေနောက်တစ်ခုကို ပြောင်းချင်တော့မယ်ဆိုရင်
+
+git checkout <name of your branch>
+
+branch ကိုဆောက်ပြီး တစ်ခါတည်း အဲ့ဒီ branch သစ်ကို ပြောင်းချင်တယ်ဆိုရင်
+
+git branch -b <new branch>
+
+4. Git status
+
+မိမိစက်က ပြင်ထားတာပဲဖြစ်ဖြစ် တစ်ခုခုကြောင့်ပြောင်းနေတယ်ဆိုရင်ကော လက်ရှိအခြေနေကို သိချင်ရင်
+
+git status
+
+5. Git add
+
+file သစ် ဆောက်တာပဲဖြစ်ဖြစ် change သွားတာပဲဖြစ်ဖြစ် commit မလုပ်ခင်မှာ မိမိchange ထားတာပြန် add ရပါတယ်
+
+file တစ်ခုတည်းကို add ချင်ရင်
+
+git add <file name>
+
+ပြောင်းထားတာအားလုံး တစ်ခါတည်း add မယ်ဆိုရင်
+
+git add -A
+
+6. Git commit
+
+မိမိစက်ထဲက changes တွေအားလုံး git server ပေါ်မတင်ခင် အရင် save လုပ်ပေးတဲ့ သဘောပါ။ commit လုပ်ပြီးမှ server ပေါ်တင်ရပါမယ်။ commit တော့မယ်ဆို message တစ်ခုအမြဲမှတ်လေ့ရှိကြတယ်(နောင်ပြန်ကြည့်ရင် ဘာကြောင့်လုပ်သွားတယ်ဆိုတာ မှတ်မိရန်)
+
+git commit -m <commit message>
+
+7. Git push
+
+ဟုတ်ပြီး မိစက်က changes တွေ commit လုပ်ပြီးရင် git server ကိုတင်တော့မယ်ဆို push ရတော့ပါမယ်။
+
+git push <remote> <branch name>
+
+branch သစ်ကိုတင်တော့မယ်ဆို
+
+git push -u origin <branch name>
+
+8. Git pull
+
+သူက server ပေါ်က ဟာကိုဆွဲတယ် ပြီးရင် local က git နဲ့တစ်ခါတည်း ပေါင်းပေးတယ်
+
+git pull = git fetch + git merge
+
+ဥပမာ…
+
+git pull <remote>
+
+9. Git revert
+
+တစ်ခါတစ်လေ changes တွေကို undo လုပ်ချင်တယ်. အရင် commit ကို ပြန်သွားချင်တယ်ဆိုရင် သုံးပါတယ်. မသုံးခင်မှာ သွားချင်တဲ့ commit ရဲ့ hash code သိဖို့လိုပါတယ်. အဲဒါကတော့
+
+git log — oneline
+
+ပြန်သွားတော့မယ်ဆိုရင်
+
+git revert <1344556>
+
+10. Git merge
+
+Developers အများကြီးက ပြင်ထားတဲ့ branches တွေအားလုံးကို branch တစ်ခုခုထဲကို ပြန်ပေါင်းတော့မယ်ဆိုရင် သုံးတယ်. ဆိုလိုတာက develop branch လာပေါင်းတယ် master branch ကိုလာပေါင်းတယ်. စသဖြင့်
+
+ဥပမာ…
+
+develop branch ကိုသွားပေါင်းတော့မယ် ဆိုပါတော့
+
+develop ကို ပြောင်းပြီး update ဖြစ်အောင် ပြန် fetch ရပါတယ်
+
+git checkout develop
+
+git fetch
+
+အဲဒါတွေပြီးရင် merge လို့ရပါပြီး
+
+git merge <your branch>
+
+မှတ်ထားရမှာက merge မလုပ်ခင်မှာ merge ရမယ့် branch <ဒီမှာဆို develop> ကို update ဖြစ်နေဖို့လိုပါတယ်. မဟုတ်ရင် conflict တွေနဲ့ တခြားမလိုတဲ့ errors တွေနဲ့ ခေါင်းခြောက်ပါတယ်။

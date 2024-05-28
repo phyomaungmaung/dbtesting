@@ -1,0 +1,20 @@
+About Version Control
+
+Version Control ဆိုတာ System တစ်ခုပဲဖြစ်ပါတယ်။ Computer System ပေါမှာ Files ကို update လုပ်တဲ့အခါမှာ သူတို့ရဲ့ပြောင်းလဲမှုတွေကို အချိန်နဲ့ တစ်ပြေးညီ Versions တွေနဲ့ မှတ်တမ်းတင်ထားပေးခြင်းဖြစ်ပါတယ်။
+လိုအပ်တဲ့ အချိန်မှာ သက်ဆိုင်ရာ version တွေမှာ ဘာတွေပြောင်းလဲခဲ့လဲ၊ ဘယ်အချိန်ပြောင်းလဲခဲ့လဲ ဆိုတာတွေကို ပြန်လည် ကြည့်နိုင်တယ်။ ပြီးတော့ ကိုယ်ကြိုက်တဲ့ Version တစ်ခုခု ကိုလဲ အချိန်မရွေး ပြန်ယူနိုင်ပါတယ်။ ဥပမာ - Programming အတွက်ဆိုရင်တော့ Source Code files တွေကို Version Control လုပ်ပြီးအသုံးပြုကြပါတယ်။ Source Code file တွေမှမဟုတ်ပဲ၊ ဘယ် File အမျိုးအစားကို မဆို Version Control နဲ့ အသုံးပြုနိုင်ပါတယ်။ ဥပမာ - ဓာတ်ပုံ၊ ဗွီဒီရို၊ Excel file, Word file and etc.Version Control Systems တွေကတော့ အောက်ပါအတိုင်း သုံးမျိုးရှိပါတယ်။ 
+Local Version Control Systems
+Centralized Version Control Systems
+Distributed Version Control System
+
+
+1. Local Version Control Systems
+အများစုက Local Version Control Systems အနေနဲ့ File တွေကို copy ကူးပြီး၊ တခြားတစ်နေရာရာ မှာ သိမ်းထားလေ့ရှိကြပါတယ်။ Folder တွေဆောက်ပြီး Date time ၊ မှတ်ချက် အနည်းငယ်ကို folder name မှာထားပြီး copy အနေနဲ့ သိမ်းထားလေ့ရှိကြပါတယ်။ ဒီလိုသိမ်းတာက အခြေခံအားဖြင့်တော့ လွယ်ကူပြီးတော့၊ အဆင်ပြေပါတယ်။ ဒါပေမဲ့ များလာတာနဲ့အမျှ ပြသနာတွေရှိလာပါတယ်။ ဥပမာ - မှားဖျက်မိတာ၊ မှားပြင်မိတာ တို့ လုပ်မိတတ်ပါတယ်။
+အရင်က ဒီပြသနာတွေကို ဖြေရှင်းဖို့အတွက် programer တွေက database ကိုအသုံးပြုပြီး Version Control System (VCS) တစ်ခုလုပ်ခဲ့ကြပါတယ်။ VCS ကိုသုံးပြီး file တွေရဲ့ changes တွေကို Version တွေအလိုက်သိမ်း ပြီး အသုံးပြုတယ်။ 
+
+2. Centralized Version Control Systems
+Local Version Control System ကိုအသုံးပြုနေရင်း နောက်ထပ် ပြသနာတစ်ခုက Developer တွေက code ရေးတဲ့အခါ တစ်ယောက်ထဲ ထက် Team နဲ့ရေးတော့ Version Control တွေကို Team တစ်ခုလုံး ပေါင်းသုံးလို့မရဘူး။ အဲ့အတွက်ကြောင့် Developer တွေက Centralized Version Control Systems (CVCS) တွေကို develop လုပ်ခဲ့ကြတယ်။ အဲ့ဒါတွေကတော့ CVS, Subversion, and Perforce တို့ဖြစ်ကြတယ်။ CVCS  တွေက Version Control ကို server တစ်ခုထဲမှာ ပဲ အားလုံးသိမ်းပြီး အလုပ်လုပ်တယ်။ Developer/ Client တွေက central server ကနေပဲ checkout လုပ်ပြီးအသုံးပြုတယ်။ နှစ်အတော်ကြာကြာ CVCS ကို Standard Version Control အဖြစ်နဲ့ အသုံးပြုခဲ့ကြတယ်။
+CVCS ရဲ့အဓိက အားနည်းချက်ကတော့ Centralized ဖြစ်တဲ့ အတွက်ကြောင့် Server မှာ တစ်ခုခုပြသနာတက်တာနဲ့  ဘယ်သူမှသုံးလို့မရတော့ဘူး။ Server down နေတဲ့ အချိန်မှာဆို ဘယ်သူမှ commit လုပ်မရဘူး၊ history တွေလဲ ကြည့်မရဘူး၊ checkout လဲဆွဲမရဘူး၊ အားလုံး ရပ်ဆိုင်းထားရတော့မှာဖြစ်တယ်။ နောက်တစ်ခုကတော့ Server မှာ Version တွေကို မှတ်ထားတဲ့ File/ Database က ပျက်သွားတယ်ဆိုရင်တော့၊​ ရှိသမျှ history တွေ အကုန်လုံးဆုံးရှုံး သွားမှာပါ။
+
+3. Distributed Version Control Systems
+အဲ့လိုနဲ့ အဆင့်ဆင့် လုပ်ပြုပြင်ပြောင်းလဲ လာကြရင် Distributed Version Control Systems (DVCS) ဖြစ်လာခဲ့တယ်။ ပေါ်ပြူလာဖြစ်တဲ့ DVCS တွေကတော့ - Git, Mercurial, Bazzar and Darcs တို့ ဖြစ်ကြတယ်။ DVCS မှာ client က file တွေကိုရဲ့ နောက်ဆုံး version ကိုပဲ ရယူထားတာမဟုတ်ပဲ၊ server တစ်ခုလုံးရဲ့ history အားလုံးနဲ့အတူတူ Full Mirror အနေနဲ့ ယူထားတယ်။ အဲ့ဒါကြောင့် Server မှာတစ်ခုခု ပြသနာရှိနေလို့၊ ဒါမှမဟုတ် လုံးဝပျက်ဆီးသွားရင်တောင် client မှာရှိတဲ့ Full Mirror ကိုယူပြီး restore ပြန်လုပ်နိုင်တယ်။ Client တစ်ခုချင်းစီးတိုင်း Server အတွက် Full Mirror backup တွေဖြစ်နေတာကြောင့် အချိန်မရွေး Restore ပြန်လုပ်နိုင်တယ်။ Limitation တစ်ခုကတော့ Client မှာ ရှိတဲ့ data က latest ဖြစ်နေဖို့တော့လိုတော့ပေါ့၊ မဟုတ်ရင် client မှာရှိတဲ့ version ကိုပဲ restore ပြန်လုပ်နိုင်မှာဖြစ်ပါတယ်။
+Server down နေတာ ဒါမှမဟုတ် Client က offline ဖြစ်နေတဲ့ အချိန် တွေလဲ၊ Client မှာ Full Mirror ရှိနေတဲ့ အတွက်ကြောင့် history တွေကို version အလိုက်ကြည့်နိုင်တယ်၊ commit တွေလုပ်ထားနိုင်တယ်။ Server နဲ့ connection ပြန်ရတဲ့ အချိန်မှ Server ကို push လုပ်လို့ရတော့ CVCS လိုမျိုး server ပေါ်မှာ အကုန်မှီခိုနေတာမဟုတ်တော့ အလုပ်လုပ်ရတာ ပိုအဆင်ပြေ လွယ်ကူစေပါတယ်။
