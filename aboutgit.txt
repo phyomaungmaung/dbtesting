@@ -2,6 +2,7 @@ About Version Control
 
 Version Control ဆိုတာ System တစ်ခုပဲဖြစ်ပါတယ်။ Computer System ပေါမှာ Files ကို update လုပ်တဲ့အခါမှာ သူတို့ရဲ့ပြောင်းလဲမှုတွေကို အချိန်နဲ့ တစ်ပြေးညီ Versions တွေနဲ့ မှတ်တမ်းတင်ထားပေးခြင်းဖြစ်ပါတယ်။
 လိုအပ်တဲ့ အချိန်မှာ သက်ဆိုင်ရာ version တွေမှာ ဘာတွေပြောင်းလဲခဲ့လဲ၊ ဘယ်အချိန်ပြောင်းလဲခဲ့လဲ ဆိုတာတွေကို ပြန်လည် ကြည့်နိုင်တယ်။ ပြီးတော့ ကိုယ်ကြိုက်တဲ့ Version တစ်ခုခု ကိုလဲ အချိန်မရွေး ပြန်ယူနိုင်ပါတယ်။ ဥပမာ - Programming အတွက်ဆိုရင်တော့ Source Code files တွေကို Version Control လုပ်ပြီးအသုံးပြုကြပါတယ်။ Source Code file တွေမှမဟုတ်ပဲ၊ ဘယ် File အမျိုးအစားကို မဆို Version Control နဲ့ အသုံးပြုနိုင်ပါတယ်။ ဥပမာ - ဓာတ်ပုံ၊ ဗွီဒီရို၊ Excel file, Word file and etc.Version Control Systems တွေကတော့ အောက်ပါအတိုင်း သုံးမျိုးရှိပါတယ်။ 
+
 Local Version Control Systems
 Centralized Version Control Systems
 Distributed Version Control System
